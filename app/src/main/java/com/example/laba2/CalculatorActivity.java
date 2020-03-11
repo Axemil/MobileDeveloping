@@ -1,7 +1,8 @@
-package com.example.myapplication;
+package com.example.laba2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -9,12 +10,15 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class CalculatorActivity extends AppCompatActivity {
+
+    //Переменная в которой будет храниться результат вычислений для отправки в главную активность
+     private double resultInMessage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_calculator);
         plusButtonOnClick();
         minusButtonOnClick();
     }
@@ -123,6 +127,7 @@ public class MainActivity extends AppCompatActivity {
     private void displayResult(double result) {
         TextView textView = findViewById(R.id.resultView);
         textView.setText(Double.toString(result));
+        resultInMessage = result;
     }
 
     //Метод который создает и показывает всплывающее окно
@@ -144,4 +149,23 @@ public class MainActivity extends AppCompatActivity {
         }
         return false;
     }
+
+    //Обработка нажатия кнопки назад на устройстве
+    @Override
+    public void onBackPressed() {
+        sendMessage();
+    }
+
+    //Отправка результата в главную активность
+    private void sendMessage() {
+        // Формируем "пустое" намерение
+        Intent intent = new Intent();
+        // Добавляем в намерение данные
+        intent.putExtra("result",Double.toString(resultInMessage));
+        // Устанавливаем результат
+        setResult(RESULT_OK,intent);
+        //Закрываем текущую активность
+        finish();
+    }
+
 }
