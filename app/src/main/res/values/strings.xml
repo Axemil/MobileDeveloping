@@ -1,6 +1,5 @@
 <resources>
-    <string name="app_name">laba3(ListView)</string>
-
+    <string name="app_name">lab3(RecyclerView)</string>
     <string name="metalica_name">Metalica</string>
     <string name="metalica_genre">Трэш-метал</string>
     <string name="metalica_year">1981 год</string>
@@ -21,7 +20,7 @@
     <string name="queen_info">Какой бы термин не применили к группе «Queen» – культовая, легендарная,
         популярнейшая – каждый будет точно отражать отношение к ней поклонников и критиков. Музыкальная
         команда давно стала классикой, если так можно сказать о коллективе, исполняющем музыку в стиле хард-
-        и поп-рок в сочетании с глэмом и джазом..</string>
+        и поп-рок в сочетании с глэмом и джазом.</string>
 
     <string name="beatles_name">The Beatles</string>
     <string name="beatles_genre">Рок-н-рол</string>
@@ -66,5 +65,4 @@
         склонностью к скандалам и была олицетворением слогана «Sex, Drugs  Rock n Roll».
         Несмотря на то, что группа выступает на сцене и сейчас, после внутренних перипетий ей не
         удалось повторить былой успех.</string>
-
 </resources>

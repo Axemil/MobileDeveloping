@@ -1,4 +1,4 @@
-package com.example.laba3list;
+package com.example.lab3recyclerview;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.example.laba3list", appContext.getPackageName());
+        assertEquals("com.example.lab3recyclerview", appContext.getPackageName());
     }
 }

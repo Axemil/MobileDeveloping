@@ -1,4 +1,4 @@
-package com.example.laba3list;
+package com.example.lab3recyclerview;
 
 import org.junit.Test;
 
