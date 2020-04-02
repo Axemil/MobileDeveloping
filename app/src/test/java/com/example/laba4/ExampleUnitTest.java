@@ -1,4 +1,4 @@
-package com.example.lab3recyclerview;
+package com.example.laba4;
 
 import org.junit.Test;
 
