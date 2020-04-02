@@ -1,4 +1,4 @@
-package com.example.laba42;
+package com.example.laba43;
 
 import org.junit.Test;
 
